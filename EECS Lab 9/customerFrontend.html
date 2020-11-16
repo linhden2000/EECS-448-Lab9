@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form class="container" onsubmit="return formCheck()" action="customerBackend.php" method="POST">
+        <label>
+            Username
+            <input name="email" id="username" type="email" value="" placeholder="Enter your email address">
+        </label>
+        <br>
+        <label>
+            Password
+            <input id="password" type="password" value="" placeholder="Enter your password">
+        </label>
+        <br>
+        <label>
+            Eyeshadows
+            <input id="Eyeshadows" name="Eyeshadows" type="text" value="" placeholder="Enter your quantity">
+        </label>
+        <br>
+        <label>
+            Lipsticks
+            <input id="Lipsticks" name="Lipsticks" type="text" value="" placeholder="Enter your quantity">
+        </label>
+        <br>
+        <label>
+            Lip balms
+            <input id="Lipbalms" name="Lipbalms" type="text" value="" placeholder="Enter your quantity">
+        </label>
+        <br>
+        <p>Shipping option: </p>
+            <input type="radio" id="type1" name="shipping" value="type1" checked>
+            <label for="type1">Free 7 days</label><br>
+            <input type="radio" id="type2" name="shipping" value="type2">
+            <label for="type2">$50.00 overnight</label><br>
+            <input type="radio" id="type3" name="shipping" value="type3">
+            <label for="type3">$5.00 three days</label><br>
+        <br>
+        <button class="submit" type="submit" >Submit</button>
+        <input class="submit" type="reset" value="Reset" onclick="window.location.reload()">
+    </form>
+    <script type="text/javascript" src="./formChecker.js"></script>
+</body>
+</html>
